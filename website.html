@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bridge 4</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./bridge 4.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      section {
+        padding: 60px 0;
+      }
+
+      body {
+        width: 97vw;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar-expands means to show the content of the navbar on the ... navbar and not on the toggle slider. -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <!-- navbar-brand means the logo portion of the navbar -->
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-primary">
+            Bridge 4-Airsick Lowlanders
+          </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <!-- data-bs-toggle = shows the collapsible menu when clicked and closes it when clicked again -->
+        <!-- data-bs-target = main-nav means to show the content that has the id=main-nav when the button is clicked. -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+        >
+          <!-- This is the styling of the actual toggle option -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <!-- collapse and navbar-collapse is used for when we want to use the collapse feature. -->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#topics" class="nav-link">About the members</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Come join us</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item d-none d-md-inline justify-content-start">
+              <a href="#pricing" class="btn btn-secondary">Buy now!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main image and intro text -->
+    <section id="intro">
+      <div class="conainer-lg">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 col-lg-5 col-xl-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Bridge 4 stew</div>
+              <div class="display-6 text-muted">by bridge 4</div>
+            </h1>
+            <p class="lead text-muted my-3">
+              Life Before Death
+              <br />
+              Strength Before Weakness
+              <br />
+              Journey Before Destination
+            </p>
+            <a href="#pricing" class="btn btn-md bg-success text-light"
+              >Buy Now!</a
+            >
+          </div>
+          <div
+            class="col-md-5 col-lg-4 col-xl-4 p-5 text-center d-none d-md-block"
+          >
+          <!-- Tooltip -->
+          <!-- To add a tooltip, we need to add some javascript too -->
+            <span
+              class="tt"
+              data-bs-placement="bottom"
+              title="Bridge Four Picture"
+            >
+              <img
+                class="img-fluid img-thumbnail"
+                src="./bridge 4 artwork.jpg"
+                alt="Tress of the emerald sea"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing plans -->
+    <section id="pricing" class="bg-light mt-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing Plans</h2>
+          <p class="lead text-muted">Choose the pricing plan that suits you</p>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center g-2">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-success border-2">
+              <div class="card-header text-success text-center">
+                The most delicious
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title">The ultimate rock stew</h4>
+                <p class="lead fs-6 card-subtitle">Handmade by rock himself</p>
+                <p class="display-6 my-4 text-primary fw-bold">
+                  Price: One shardplate
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, aut.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-success border-3">
+              <div class="card-header text-success text-center">
+                The most cheapest
+              </div>
+              <div class="card-body text-center">
+                <h4 class="card-title">The lopen stew</h4>
+                <p class="lead fs-6 card-subtitle">
+                  Handmade by lopen and his cousins
+                </p>
+                <p class="display-6 my-4 text-primary fw-bold">
+                  Price: One herdazian joke
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, aut.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-dark border-2">
+              <div class="card-body text-center">
+                <h4 class="card-title">The Stew</h4>
+                <p class="lead fs-6 card-subtitle">Ordinary stew</p>
+                <p class="display-6 my-4 text-primary fw-bold">
+                  Price: One dun sphere
+                </p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, aut.
+                </p>
+                <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The members -->
+    <section id="topics">
+      <div class="container-md">
+        <div class="text-center">
+          <!-- <i class="bi bi-people-fill"></i> -->
+          <h2>Bridge 4 members</h2>
+          <p class="lead text-muted">Meet the gang</p>
+        </div>
+
+        <div class="row my-5 g-5 justify-content-center align-items-center">
+          <div class="col-6 col-lg-4 col-xl-4">
+            <img
+              src="./bridge 4.png"
+              class="img-fluid shadow"
+              alt="Bridge 4 glyph"
+            />
+          </div>
+          <div class="col-lg-6 col-xl-5">
+            <!-- Accordians -->
+            <div class="accordion" id="members">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-1">
+                  <!-- data-bs-targer is set to member1, which means to show the content of id=member1 when the buton is clicked -->
+                  <button
+                    class="accordion-button bg-primary-subtle"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#member1"
+                    aria-expanded="true"
+                    aria-controls="member 1"
+                  >
+                    Kaladin Stormblessed
+                  </button>
+                </h2>
+                <div
+                  id="member1"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#members"
+                >
+                  <div class="accordion-body">
+                    Kaladin stromblessed-the leader...he is insecure.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button bg-warning-subtle text-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#member2"
+                    aria-expanded="true"
+                    aria-controls="member 2"
+                  >
+                    Rock (You don't want to pronounce his full name)
+                  </button>
+                </h2>
+                <div
+                  id="member2"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#members"
+                >
+                  <div class="accordion-body">
+                    Numuhukumakiaki'aialunamor aka rock...he makes good stew
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button bg-success text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#member3"
+                    aria-expanded="true"
+                    aria-controls="member 3"
+                  >
+                    The Lopen
+                  </button>
+                </h2>
+                <div
+                  id="member3"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#members"
+                >
+                  <div class="accordion-body">
+                    Lopen aka The Lopen...he makes nice jokes
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button bg-danger text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#member4"
+                    aria-expanded="true"
+                    aria-controls="member 4"
+                  >
+                    Moash
+                  </button>
+                </h2>
+                <div
+                  id="member4"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#members"
+                >
+                  <div class="accordion-body">
+                    Moash...We don't talk about him
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="bg-light">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Stew Reviews</h2>
+          <p class="lead">
+            Don't believe us? <br />
+            Here is what the people had to say
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="justify-content-between w-100 d-flex">
+                  <h5 class="mb-1">The best there is</h5>
+                  <small>3 highstorms ago</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Deserunt ratione laudantium consequatur nam. Quidem fugiat
+                  beatae, atque repellendus autem ab distinctio sapiente quo
+                  tenetur iste excepturi. Aut, sit temporibus! Quibusdam?
+                </p>
+                <small>Dalinar Kholin</small>
+              </div>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="justify-content-between w-100 d-flex">
+                  <h5 class="mb-1">
+                    I accidentally ate my fingers trying to lick them
+                  </h5>
+                  <small>1 highstorms ago</small>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Deserunt ratione laudantium consequatur nam. Quidem fugiat
+                  beatae, atque repellendus autem ab distinctio sapiente quo
+                  tenetur iste excepturi. Aut, sit temporibus! Quibusdam?
+                </p>
+                <small>The Lopen</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
+    <section class="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Join us fellow air sick lowlanders</h2>
+          <p class="lead">Questions to ask? Ask lopen</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="e.g. The lopen"
+              />
+
+              <label for="email" class="form-label">Spanread number:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="e.g.Navani kholin 1234"
+              />
+
+              <label for="subject" class="form-label"
+                >What is your question about?</label
+              >
+              <select class="form-select" id="subject">
+                <option value="pricing" selected>Pricing query</option>
+                <option value="content">Contect query</option>
+                <option value="other">Other query</option>
+              </select>
+
+              <div class="form-floating my-4">
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px"
+                ></textarea>
+                <label for="query" class="form-label">Your query...</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section>
+      <div class="container">
+        <div class="text-center">
+          <h2>Stay in touch</h2>
+          <p class="lead">Get the latest recipes as they are discovered</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <p class="text-muted my-4 mx-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus commodi recusandae nam. Sunt ab expedita repudiandae velit nobis maiores inventore vel eius alias Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nihil exercitationem odit suscipit quam accusamus architecto. Esse ea possimus hic odio distinctio corrupti?</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptates temporibus, odio, aliquam veniam fuga rerum, repudiandae vitae harum maxime dignissimos? Non minima id nisi rerum totam dolorum corrupti molestias aut error. Fuga, ipsum?</p>
+            <label for="modal-spanreed" class="form-label">Your spanreed number</label>
+            <input type="text" class="form-control" id="modal-spanreed" placeholder="e.g. Urithiru 39">
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltips = document.querySelectorAll(".tt");
+      tooltips.forEach((t) => {
+        new bootstrap.Tooltip(t);
+      });
+    </script>
+  </body>
+</html>
